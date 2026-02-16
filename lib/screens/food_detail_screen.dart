@@ -28,6 +28,7 @@ class _FoodDetailScreenState extends State<FoodDetailScreen> {
       backgroundColor: const Color(0xFFF6F7FB),
       appBar: AppBar(
         title: Text(widget.food.name),
+        titleSpacing: -5, // Adds spacing to the left of the title
         backgroundColor: const Color(0xFF1C2E4A),
         foregroundColor: Colors.white,
         titleTextStyle: const TextStyle(
@@ -137,7 +138,7 @@ class _FoodDetailScreenState extends State<FoodDetailScreen> {
                         child: ElevatedButton.icon(
                           icon: const Icon(Icons.shopping_cart_outlined),
                           label: const Text(
-                            "ADD TO CART",
+                            "Add to Cart",
                             style: TextStyle(
                               fontSize: 16,
                               fontWeight: FontWeight.bold,
